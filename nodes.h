@@ -238,13 +238,6 @@ static struct node nodes[] = {
 		.idstr = "BEB71F97ED9C99C04B8489BB75579EB4DC6AB6F441B603D63533122F1858B51D"
 	},
 	{
-		.addr4 = "completelyunoriginal.moe",
-		.addr6 = "completelyunoriginal.moe",
-		.udp_port = 33445,
-		.tcp_port = 33445,
-		.idstr = "FBC7DED0B0B662D81094D91CC312D6CDF12A7B16C7FFB93817143116B510C13E"
-	},
-	{
 		.addr4 = "136.243.141.187",
 		.addr6 = "2a01:4f8:212:2459::a:1337",
 		.udp_port = 443,
