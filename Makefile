@@ -3,10 +3,17 @@ include config.mk
 .POSIX:
 .SUFFIXES: .c .o
 
-HDR = arg.h config.h readpassphrase.h util.h
+HDR = \
+	arg.h \
+	config.h \
+	nodes.h \
+	readpassphrase.h \
+	util.h
+
 LIB = \
 	eprintf.o \
 	readpassphrase.o
+
 SRC = \
 	ratox.c
 
@@ -14,22 +21,22 @@ OBJ = $(SRC:.c=.o) $(LIB)
 BIN = $(SRC:.c=)
 MAN = $(SRC:.c=.1)
 
-all: binlib
+all: $(BIN)
 
-binlib: util.a
-	$(MAKE) bin
-
-bin: $(BIN)
-
+$(BIN): $(OBJ) util.a
 $(OBJ): $(HDR) config.mk
 
 config.h:
 	@echo creating $@ from config.def.h
 	@cp config.def.h $@
 
+nodes.h:
+	@echo creating $@ with nodegen
+	@./nodegen >$@
+
 .o:
 	@echo LD $@
-	@$(LD) -o $@ $< util.a $(LDFLAGS)
+	@$(LD) -o $@ $< util.a $(LDFLAGS) $(LDLIBS)
 
 .c.o:
 	@echo CC $<
@@ -58,3 +65,5 @@ uninstall:
 clean:
 	@echo cleaning
 	@rm -f $(BIN) $(OBJ) $(LIB) util.a
+
+.PHONY: all binlib bin install uninstall clean
