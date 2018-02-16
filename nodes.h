@@ -1,18 +1,33 @@
 static struct node nodes[] = {
 	{
-		.addr4 = "biribiri.org",
+		.addr4 = "tox.novg.net",
 		.addr6 = NULL,
 		.udp_port = 33445,
 		.tcp_port = 3389,
-		.idstr = "F404ABAA1C99A9D37D61AB54898F56793E1DEF8BD46B1038B9D822E8460FAB67"
+		.idstr = "D527E5847F8330D628DAB1814F0A422F6DC9D0A300E6C357634EE2DA88C35463"
 	},
 	{
-		.addr4 = "nodes.tox.chat",
+		.addr4 = "biribiri.org",
 		.addr6 = NULL,
 		.udp_port = 33445,
 		.tcp_port = 33445,
-		.idstr = "6FC41E2BD381D37E9748FC0E0328CE086AF9598BECC8FEB7DDF2E440475F300E"
+		.idstr = "F404ABAA1C99A9D37D61AB54898F56793E1DEF8BD46B1038B9D822E8460FAB67"
 	},
+	{
+		.addr4 = "37.187.122.30",
+		.addr6 = NULL,
+		.udp_port = 33445,
+		.tcp_port = 33445,
+		.idstr = "BEB71F97ED9C99C04B8489BB75579EB4DC6AB6F441B603D63533122F1858B51D"
+	},
+	{
+		.addr4 = "85.172.30.117",
+		.addr6 = NULL,
+		.udp_port = 33445,
+		.tcp_port = 33445,
+		.idstr = "8E7D0B859922EF569298B4D261A8CCB5FEA14FB91ED412A7603A585A25698832"
+	},
+
 	{
 		.addr4 = "130.133.110.14",
 		.addr6 = "2001:6f8:1c3c:babe::14:1",
@@ -229,13 +244,6 @@ static struct node nodes[] = {
 		.udp_port = 33445,
 		.tcp_port = 33445,
 		.idstr = "1CB6EBFD9D85448FA70D3CAE1220B76BF6FCE911B46ACDCF88054C190589650B"
-	},
-	{
-		.addr4 = "37.187.122.30",
-		.addr6 = NULL,
-		.udp_port = 33445,
-		.tcp_port = 33445,
-		.idstr = "BEB71F97ED9C99C04B8489BB75579EB4DC6AB6F441B603D63533122F1858B51D"
 	},
 	{
 		.addr4 = "136.243.141.187",
