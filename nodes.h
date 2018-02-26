@@ -197,13 +197,6 @@ static struct node nodes[] = {
 		.idstr = "3F0A45A268367C1BEA652F258C85F4A66DA76BCAA667A49E770BCC4917AB6A25"
 	},
 	{
-		.addr4 = "hibiki.eve.moe",
-		.addr6 = "hibiki.eve.moe",
-		.udp_port = 33445,
-		.tcp_port = 33445,
-		.idstr = "D3EB45181B343C2C222A5BCF72B760638E15ED87904625AAD351C594EEFAE03E"
-	},
-	{
 		.addr4 = "tox.deadteam.org",
 		.addr6 = "tox.deadteam.org",
 		.udp_port = 33445,
